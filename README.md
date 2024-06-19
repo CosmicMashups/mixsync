@@ -1,12 +1,12 @@
-# MIXSYNC
+# MixSync
 This application can be used to accurately find and sort songs by key and BPM, curated with meticulous verification, and filter them by various attributes for a seamless music-matching experience.
 
-# CHAPTER I: INTRODUCTION AND BACKGROUND OF THE STUDY
+# Chapter I: Introduction
 Have you ever found yourself wondering how you can efficiently determine which song would complement another without making them sound too different from their original versions? One common approach that mashup artists use is to analyze the key and BPM (beats per minute) of the songs. As a mashup artist myself, I prefer to mix songs that share the same key and BPM, or at least are close in these attributes. By "close," I specifically mean that the songs should be no more than 2 keys apart and no more than 15 BPMs apart, although a difference of 5 BPMs is preferable.
 	However, finding songs that meet these criteria can be quite challenging. You might need to sift through your entire music database—if you even have one—scrolling through numerous irrelevant tracks before stumbling upon a suitable match. If you're not fortunate, you may have to rely on available song key and BPM finders, which often provide inaccurate information. This means you must first verify whether these tools have correctly identified the key and BPM, adding more time and effort to the process.
 	The key and BPM (beats per minute) of a song are fundamental elements of its musical composition and structure. The key refers to the tonal center or the pitch around which the song revolves melodically and harmonically. They are typically identified by letters such as C, D, E, etc., followed by major (e.g., C major) or minor (e.g., A minor) to denote the mood and tonality. On the other hand, BPM denotes the tempo or speed at which the song is played, measured in beats per minute. It defines how fast or slow the rhythm of the song progresses, influencing its energy level and feel. Together, the key and BPM of a song provide essential information for musicians, DJs, producers, and listeners alike. They help in understanding the mood, style, and compatibility of songs for mixing, mashups, or creating cohesive playlists. Analyzing and knowing these elements enable greater creativity and precision in music production and performance, ensuring that musical pieces harmonize seamlessly or contrast effectively when desired.
 
-# OBJECTIVES OF THE STUDY
+# Objectives of the Study
 The application aims to accomplish the following:
 -	To create an application that provides accurate information on the keys and BPMs of various songs.
 -	To efficiently find songs that would match a certain song in terms of their key and BPM.
@@ -14,7 +14,7 @@ The application aims to accomplish the following:
 -	To devise a method for handling BPMs within the specified threshold effectively
 -	To verify and validate key and BPM data accuracy to mitigate inaccuracies
 
-# STATEMENT OF THE PROBLEM
+# Statement of the Problem
 The study attempts to know the efficiency of MixSync as an application to enhance music mixing. Specifically, it seeks to answer the following questions: 
 1. How is it different from any other song & key bpm finders available?
 2. What specific issues does the application aim to solve regarding key and BPM management?
@@ -24,11 +24,11 @@ Causes data redundancy: Multiple records for songs to differentiate k/b changes.
 Formula: range((SONG_BPM/2) ± 15)
 5. What are the possible issues that you see ahead and how do you plan to solve them? 
 
-# SCOPE AND DELIMITATIONS
+# Scope and Delimitations
 The scope of the application includes the development of a robust database that accurately stores key and BPM (beats per minute) information for a wide range of songs. Unlike existing tools prone to inaccuracies, this database will be meticulously curated through personal analysis and verification by knowledgeable contributors. The application will feature a comprehensive sorting method allowing users to organize songs by title, key, BPM, artist, origin, type, and year, with options for both ascending and descending order. Users will have the flexibility to filter results by specific song types, such as Anime or K-Pop, using checkboxes. Additionally, the application will implement a threshold feature enabling users to search for songs within ±15 BPM of a selected song’s BPM and ±2 keys of its key.
 Despite its functionalities, the application has certain limitations. It does not facilitate the actual creation of mashups; rather, it focuses on providing accurate data to assist in the process. Furthermore, it does not claim ownership of the songs stored within its database, which are sourced from publicly available information and contributed by users. Therefore, any legal or copyright issues pertaining to the songs themselves are not the responsibility of the application. These delimitations ensure a clear focus on data accuracy and usability while maintaining ethical and legal standards in music information management. 
 
-# FUNCTIONALITIES
+# Functionalities
 A. Database with Accurate Key and BPM
 Some song key & bpm finders available on the Internet (e.g. TuneBat, SongBPM) provides inaccurate information more specifically with keys. As someone who personally analyzed the songs with the help of other people, 
 B. Sorting Method
@@ -39,7 +39,7 @@ C. Threshold
 ±15 BPM from the song's BPM
 ±2 keys from the song's key
  
-# DEFINITION OF TERMS
+# Definition of Terms
 -	TITLE. The name of the song.
 -	KEY. Refers to the tonal center or the pitch around which the song revolves melodically and harmonically. C, C#, D, D#, E, F, F#, G, G#, A, A#, B.
 -	BPM. The number of beats per minute of the song – having the lowest at 70, and the highest being 139.
