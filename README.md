@@ -2,7 +2,7 @@
 This application can be used to accurately find and sort songs by key and BPM, curated with meticulous verification, and filter them by various attributes for a seamless music-matching experience.
 
 ## Changes
-- 06.18.24 Initial planning stage, created a prototype using a small database containing anime songs only.
+- 06.18.24 Initial planning stage, created a prototype using a small database containing anime songs only. Threshold is fixed to ±15 BPM and ±2 keys from the input specified by the user.
 - 06.19.24 Added an option to choose whether to look through the database of anime songs or Western songs.
 - 06.20.24 Separated the user-defined functions in a separate file. Added a new sorting method that takes the songs with the closest key and BPM to the ones specified by the user at the top.
 
@@ -38,15 +38,14 @@ The scope of the application includes the development of a robust database that 
 Despite its functionalities, the application has certain limitations. It does not facilitate the actual creation of mashups; rather, it focuses on providing accurate data to assist in the process. Furthermore, it does not claim ownership of the songs stored within its database, which are sourced from publicly available information and contributed by users. Therefore, any legal or copyright issues pertaining to the songs themselves are not the responsibility of the application. These delimitations ensure a clear focus on data accuracy and usability while maintaining ethical and legal standards in music information management. 
 
 ## Functionalities
-A. Database with Accurate Key and BPM
-Some song key & bpm finders available on the Internet (e.g. TuneBat, SongBPM) provides inaccurate information more specifically with keys. As someone who personally analyzed the songs with the help of other people, 
-B. Sorting Method
-Title, Key, BPM, Artist, Origin, Type, Year
-Order: Ascending, Descending
-Checkbox: You have an option to select whether to show a specific/multiple type/s of song only (e.g. Anime, K-Pop, etc.).
-C. Threshold
-±15 BPM from the song's BPM
-±2 keys from the song's key
+1. Database with Accurate Key and BPM
+- Some song key & bpm finders available on the Internet (e.g. TuneBat, SongBPM) provides inaccurate information more specifically with keys. As someone who personally analyzed the songs with the help of other people, 
+2. Sorting Method
+- Title, Key, BPM, Artist, Origin, Type, Year
+- Order: Ascending, Descending
+- Checkbox: You have an option to select whether to show a specific/multiple type/s of song only (e.g. Anime, K-Pop, etc.).
+3. Threshold
+- 
  
 ## Definition of Terms
 -	TITLE. The name of the song.
