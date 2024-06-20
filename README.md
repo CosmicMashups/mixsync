@@ -3,7 +3,7 @@ This application can be used to accurately find and sort songs by key and BPM, c
 
 ## Changes
 - 06.18.24 Initial planning stage, created a prototype using a small database containing anime songs only. Threshold is fixed to ±15 BPM and ±2 keys from the input specified by the user.
-- 06.19.24 Added an option to choose whether to look through the database of anime songs or Western songs.
+- 06.19.24 Added an option to choose whether to look through the database of anime songs or Western songs. User can now specify how much will the key and bpm threshold be, respectively.
 - 06.20.24 Separated the user-defined functions in a separate file. Added a new sorting method that takes the songs with the closest key and BPM to the ones specified by the user at the top.
 
 ## Introduction
