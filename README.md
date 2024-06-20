@@ -54,7 +54,8 @@ Despite its functionalities, the application has certain limitations. It does no
 - Order: Ascending, Descending
 - Checkbox: You have an option to select whether to show a specific/multiple type/s of song only (e.g. Anime, K-Pop, etc.).
 3. **Threshold**
-- 
+- The key threshold functionality allows users to search for songs within a specified range of musical keys relative to a selected song's key. For example, if the selected song's key is C Major and the threshold is set to ±2 keys, the application will include songs in the keys of A# Major, B Major, C# Major, and D Major in the search results. This ensures that users can find songs that are harmonically compatible with the selected song, facilitating smoother transitions and more cohesive mixes.
+- The BPM (beats per minute) threshold functionality enables users to search for songs within a specified range of BPMs relative to a selected song's BPM. For instance, if the selected song's BPM is 120 and the threshold is set to ±15 BPM, the application will include songs with BPMs ranging from 105 to 135. This feature helps users find songs with similar tempos, making it easier to create mixes that maintain a consistent rhythm and flow.
  
 ## Definition of Terms
 -	**TITLE**. The name of the song.
