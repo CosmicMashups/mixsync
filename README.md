@@ -37,22 +37,31 @@ Formula: range((SONG_BPM/2) ± 15)
 The scope of the application includes the development of a robust database that accurately stores key and BPM (beats per minute) information for a wide range of songs. Unlike existing tools prone to inaccuracies, this database will be meticulously curated through personal analysis and verification by knowledgeable contributors. The application will feature a comprehensive sorting method allowing users to organize songs by title, key, BPM, artist, origin, type, and year, with options for both ascending and descending order. Users will have the flexibility to filter results by specific song types, such as Anime or K-Pop, using checkboxes. Additionally, the application will implement a threshold feature enabling users to search for songs within ±15 BPM of a selected song’s BPM and ±2 keys of its key.
 Despite its functionalities, the application has certain limitations. It does not facilitate the actual creation of mashups; rather, it focuses on providing accurate data to assist in the process. Furthermore, it does not claim ownership of the songs stored within its database, which are sourced from publicly available information and contributed by users. Therefore, any legal or copyright issues pertaining to the songs themselves are not the responsibility of the application. These delimitations ensure a clear focus on data accuracy and usability while maintaining ethical and legal standards in music information management. 
 
+## Significance of the Study
+- **Mashup Artists**. These artists can easily find songs that fit well together in terms of key and BPM, enhancing the cohesiveness and harmony of their mixes. With a reliable database of keys and BPMs, the information provided can trusted, reducing the time spent on manual verification.
+- **DJs**. This application can be used to find songs that match their current track's key and BPM, ensuring smooth transitions during live sets. The ability to sort and filter songs by various attributes helps DJs curate and organize their playlists more effectively.
+- **Music Producers**. This application can discover tracks with specific keys and BPMs for sampling, remixing, or integrating into new productions. Its precise data helps producers experiment with different musical elements, fostering innovation and creativity.
+- **Music Educators**. This application can demonstrate key and BPM relationships to students, providing practical examples of harmonic and rhythmic compatibility. Curating song lists that fit specific educational goals are made easier, aiding in developing music theory and production courses.
+- **Music Enthusiasts**. Music lovers can create playlists with songs that are harmonically and rhythmically compatible, enhancing their listening experience. The application helps enthusiasts explore new songs that fit their preferred musical criteria, broadening their musical horizons.
+- **Event Planners**. This application can select music that maintains a consistent mood and energy level, crucial for setting the right atmosphere at events. Its sorting and filtering capabilities allow for quick and efficient music selection, saving time during event preparations.
+- **Future Researchers**. The application provides a meticulously curated and accurate database of song keys and BPMs, enabling efficient data collection, sorting, and filtering for comprehensive and reliable music research. This facilitates advanced analysis, trend identification, and educational research while supporting collaborative efforts through data sharing and contributions.
+
 ## Functionalities
-1. Database with Accurate Key and BPM
+1. **Database with Accurate Key and BPM**
 - Some song key & bpm finders available on the Internet (e.g. TuneBat, SongBPM) provides inaccurate information more specifically with keys. As someone who personally analyzed the songs with the help of other people, 
-2. Sorting Method
+2. **Sorting Method**
 - Title, Key, BPM, Artist, Origin, Type, Year
 - Order: Ascending, Descending
 - Checkbox: You have an option to select whether to show a specific/multiple type/s of song only (e.g. Anime, K-Pop, etc.).
-3. Threshold
+3. **Threshold**
 - 
  
 ## Definition of Terms
--	TITLE. The name of the song.
--	KEY. Refers to the tonal center or the pitch around which the song revolves melodically and harmonically. C, C#, D, D#, E, F, F#, G, G#, A, A#, B.
--	BPM. The number of beats per minute of the song – having the lowest at 70, and the highest being 139.
--	PART. Specifies the part of the song that is being described of the key and BPM such as Intro, Verse, Pre-chorus, Chorus, Post-chorus, Bridge. This will -be used for handling key and BPM changes.
--	ARTIST. The name of the artist.
--	ORIGIN. Specifies if the particular song is being used as a soundtrack for a series, movie, or drama. It includes categories such as Anime Title, Movie Title, Drama Title, and Series Title.
--	TYPE. Specifies the type of song. Anime, J-Pop, K-Pop, Western, OPM.
--	YEAR. Specifies what year the song was released. This will be used by mashup artists who are planning to make year-end mashups.
+-	**TITLE**. The name of the song.
+-	**KEY**. Refers to the tonal center or the pitch around which the song revolves melodically and harmonically. C, C#, D, D#, E, F, F#, G, G#, A, A#, B.
+-	**BPM**. The number of beats per minute of the song – having the lowest at 70, and the highest being 139.
+-	**PART**. Specifies the part of the song that is being described of the key and BPM such as Intro, Verse, Pre-chorus, Chorus, Post-chorus, Bridge. This will -be used for handling key and BPM changes.
+-	**ARTIST**. The name of the artist.
+-	**ORIGIN**. Specifies if the particular song is being used as a soundtrack for a series, movie, or drama. It includes categories such as Anime Title, Movie Title, Drama Title, and Series Title.
+-	**TYPE**. Specifies the type of song. Anime, J-Pop, K-Pop, Western, OPM.
+-	**YEAR**. Specifies what year the song was released. This will be used by mashup artists who are planning to make year-end mashups.
