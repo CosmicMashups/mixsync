@@ -1,5 +1,6 @@
 from match import delay, read_database, song_match      # bpm_finder, key_finder, sort_bpm, sort_keys
 from search import search_song                          # sorting
+from add import add_song
 
 div = "=" * 15
 print(f"{div} WELCOME TO MIXSYNC {div}")
@@ -25,19 +26,23 @@ while True:
 
     match db_name:
         case 1:
+            db_title = 'Anime'
             db_name = 'anime.csv'
             # List of keys
             key_list = ["C Major", "C# Major", "D Major", "D# Major", "E Major", "F Major",
                         "F# Major", "G Major", "G# Major", "A Major", "A# Major", "B Major"]
         case 2:
+            db_title = 'Western'
             db_name = 'western.csv'
             # List of keys
             key_list = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"]
         case 3:
-            print("We're sorry. The database containing K-Pop songs is still not ready yet.")
+            db_title = 'K-Pop'
+            print(f"We're sorry. The database containing {db_title} songs is still not ready yet.")
             break
         case 4:
-            print("We're sorry. The database containing OPM songs is still not ready yet.")
+            db_title = 'OPM'
+            print(f"We're sorry. The database containing {db_title} songs is still not ready yet.")
             break
 
     try:
@@ -63,23 +68,23 @@ while True:
             searched = search_song(database, db_name, columns_to_display, div)
 
             if searched is not None and not searched.empty:
-                searched_title = searched.iloc[0]['TITLE']
-                search_match = input(f"Do you want to search songs that would match '{searched.iloc[0]['TITLE']}' by '{searched.iloc[0]['ARTIST']}' [Y/N]: ").lower()
+                for counter in range(len(searched.index)):
+                    searched_title = searched.iloc[counter]['TITLE']
+                    search_match = input(f"Search songs that would match '{searched.iloc[counter]['TITLE']}' by '{searched.iloc[counter]['ARTIST']}'? [Y/N]: ").lower()
 
-                if search_match == "y":
-                    bpm = int(searched.iloc[0]['BPM'])
-                    key = searched.iloc[0]['KEY']
-                    song_match(database, bpm, key, key_list, columns_to_display, div)
-                else:
-                    print("No search performed.")
+                    if search_match == "y":
+                        bpm = int(searched.iloc[counter]['BPM'])
+                        key = searched.iloc[counter]['KEY']
+                        song_match(database, bpm, key, key_list, columns_to_display, div)
+                    else:
+                        print("No search performed.")
 
             else:
                 print("No search performed.")
 
         # ADD SONGS
         case 2:
-            print("We're sorry. The feature of adding songs is still not available.")
-            break
+            add_song(database, db_name, db_title, key_list)
 
         # MATCH (BY KEY, BPM)
         case 3:
@@ -107,8 +112,8 @@ while True:
             break
 
     # User input: Ask if the user wants to run another query
-    option = input("Do you still want to search (Yes/No): ").lower()
-    if option != "yes":
+    option = input("Make another process [Y/N]: ").lower()
+    if option != "y":
         delay()
         print("Thank you for using MixSync!")
         break
