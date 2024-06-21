@@ -2,9 +2,10 @@
 This application can be used to accurately find and sort songs by key and BPM, curated with meticulous verification, and filter them by various attributes for a seamless music-matching experience.
 
 ## Changes
-- 06.18.24 Initial planning stage, created a prototype using a small database containing anime songs only. Threshold is fixed to ±15 BPM and ±2 keys from the input specified by the user.
-- 06.19.24 Added an option to choose whether to look through the database of anime songs or Western songs. User can now specify how much will the key and bpm threshold be, respectively.
-- 06.20.24 Separated the user-defined functions in a separate file. Added a new sorting method that takes the songs with the closest key and BPM to the ones specified by the user at the top.
+- **06.21.24**. Introduced "Search" functionality. Added a search algorithm that can search through the database by entering the search field and the search term.
+- **06.20.24**. Separated the user-defined functions in a separate file. Added a new sorting method that takes the songs with the closest key and BPM to the ones specified by the user at the top.
+- **06.19.24**. Added an option to choose whether to look through the database of anime songs or Western songs. User can now specify how much will the key and bpm threshold be, respectively.
+- **06.18.24**. Initial planning stage, created a prototype using a small database containing anime songs only. Threshold is fixed to ±15 BPM and ±2 keys from the input specified by the user.
 
 ## Introduction
 Have you ever found yourself wondering how you can efficiently determine which song would complement another without making them sound too different from their original versions? One common approach that mashup artists use is to analyze the key and BPM (beats per minute) of the songs. As a mashup artist myself, I prefer to mix songs that share the same key and BPM, or at least are close in these attributes. By "close," I specifically mean that the songs should be no more than 2 keys apart and no more than 15 BPMs apart, although a difference of 5 BPMs is preferable.
