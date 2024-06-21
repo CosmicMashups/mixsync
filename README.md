@@ -2,6 +2,7 @@
 This application can be used to accurately find and sort songs by key and BPM, curated with meticulous verification, and filter them by various attributes for a seamless music-matching experience.
 
 ## Changes
+- **06.22.24**. Introduced "Add Song" functionality. The user can now add a new record on the specified database.
 - **06.21.24**. Introduced "Search" functionality. Added a search algorithm that can search through the database by entering the search field and the search term.
 - **06.20.24**. Separated the user-defined functions in a separate file. Added a new sorting method that takes the songs with the closest key and BPM to the ones specified by the user at the top.
 - **06.19.24**. Added an option to choose whether to look through the database of anime songs or Western songs. User can now specify how much will the key and bpm threshold be, respectively.
